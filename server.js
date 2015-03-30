@@ -1,4 +1,4 @@
-var express = require('express');
-var app = express();
 
-app.listen(8888);
+module.exports = function(app) {
+	app.listen(8888);
+};
