@@ -8,7 +8,11 @@ describe('Routes', function() {
 	it('Returns Home Page', function(done){	
 		request
 		.get('/')		
-		.expect(200, done);		
+		.expect(200)
+		.end(function(err, response) {
+			if (err) return done(err);
+			done();
+		});
 	});	
 
 	it('Returns Rates', function(done){
