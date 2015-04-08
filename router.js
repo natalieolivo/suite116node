@@ -5,13 +5,13 @@ module.exports = function(app) {
 
     /** HOME **/
 	app.get('/', function(request, response) {		
-		response.sendFile('index.html', { root: path.join(__dirname, './views') }, function(err) {
-			if(err) {
-				response.status(err.status).end();	
-			} else {
-				 console.log('Sent:', path.join(__dirname, './views'));
-				 //response.sendStatus(200);
-			}
+		response.render('index', {
+			touts: [{
+				title:"Wedding Packages",
+				link:"wedding",
+				image:"wedding1.jpg",
+				copy:"Our Wedding Planning Partners are best in industry experts. There is so much to remember for such a big day! Book an expert today, and relieve some of the stresses of arranging your big day."
+			}]
 		});
 	});
 
