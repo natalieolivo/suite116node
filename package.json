@@ -19,6 +19,8 @@
     "gulp": "^3.8.11",
     "gulp-karma": "0.0.4",
     "gulp-mocha": "^2.0.0",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-ruby-sass": "^1.0.1",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.7",
     "karma-mocha": "^0.1.10",
