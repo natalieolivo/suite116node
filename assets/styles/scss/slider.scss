@@ -1,0 +1,150 @@
+/*
+	BXSLIDER : CUSTOM STYLES
+*/
+.bx-wrapper {
+	position: relative;
+	max-width: 75% !important;
+	margin: 0 auto;	
+}
+.bx-wrapper li {
+	margin-top: 0 !important;
+}
+.bx-controls-direction a {
+	position: absolute;	
+	display: block;
+	top: 224px;
+	top: 14rem;
+	width: 100px;
+	z-index: 100;
+	color: transparent;
+	opacity: 0;
+}
+.bx-controls {
+	height: 0;
+}
+.bx-controls-direction a:hover {
+	opacity: 1;
+}
+.bx-controls-direction .bx-prev { left: -110px; }
+.bx-controls-direction .bx-prev:before { content: '\e5ff'; }
+.bx-controls-direction .bx-next { right: -110px; }
+.bx-controls-direction .bx-next:before { 
+	content: '\e608'; 
+}
+.bx-controls-direction .bx-prev:before,
+.bx-controls-direction .bx-next:before {
+	font-size: 6rem;
+	color: #3D3C3C;
+	font-family: 'icomoon';
+	margin-left: 0;	
+	text-shadow: 1px 1px 8px #000;	
+}
+
+.bx-controls-auto { display: none; }
+.bx-pager {
+	width: 14rem;
+	position: relative;
+	z-index: 999;
+	top: -2rem;
+	margin-left: 2rem;
+}
+.bx-pager-item {
+	display: inline-block;
+	margin: 0 4px;
+	width: 1rem;
+}
+.bx-pager-item a {
+	color: #fff;
+	border: none;
+	border-radius: 2rem;
+	background: rgba(255,255,255,.65);	
+	display: block;
+	text-indent: -9999px;
+
+}
+.bx-pager-item a.active {			
+	/*background: rgba(204,0,0,1);*/
+	background: rgba(216, 193, 124, 1);	
+}
+
+/**
+	KIDS & Wedding
+**/
+.wedding .bx-wrapper,
+.kids .bx-wrapper {
+	margin: 0 auto 20px;
+}
+
+.wedding .bx-controls-direction .bx-prev:before,
+.wedding .bx-controls-direction .bx-next:before,
+.kids .bx-controls-direction .bx-prev:before,
+.kids .bx-controls-direction .bx-next:before {
+	color: rgb(216, 193, 124);
+	text-shadow: none;
+}
+.wedding .bx-controls-direction a,
+.kids .bx-controls-direction a {
+	top: 160px;
+	top: 10rem;
+}
+
+/*.wedding .bx-wrapper li,*/
+.kids .bx-wrapper li { 
+	height: 400px;		 
+}
+
+.kids .bx-wrapper li:nth-child(1) {
+	background: url(../imgs/reptiles.png);	
+}
+.kids .bx-wrapper li:nth-child(2) {
+	background: url(../imgs/customBirthday.jpg);
+	background-size: cover;
+	background-position: 0 35%;
+}
+.kids .bx-wrapper li:nth-child(3) {
+	background: url(../imgs/customSetup1.jpg);
+	background-size: cover;
+	background-position: 0 35%;
+}
+.kids .bx-wrapper li:nth-child(4) {
+	background: url(../imgs/customSetup2.jpg);
+	background-size: cover;
+}
+.kids .bx-wrapper li:nth-child(5) {
+	background: url(../imgs/invite1.png);
+	background-position: 44% 72%;
+	background-size: cover;
+}
+.kids .bx-wrapper li:nth-child(6) {
+	background: url(../imgs/invite2.jpg);
+	background-size: 80%;
+	background-position: 52% 23%;
+	background-size: cover;
+}
+/*.wedding .bx-wrapper li:nth-child(1) {
+	background: url(../imgs/wedding1.jpg);
+	background-size: 100%;
+	background-position: 52% 23%;	
+}
+.wedding .bx-wrapper li:nth-child(2) {
+	background: url(../imgs/043c27_8c1b5778a52441968d68010e3d1ba9b7.jpg);
+	background-size: 100%;
+	background-position: 52% 23%;	
+}*/
+
+@media (max-width: 768px) {
+	.bx-controls-direction a {
+		top: 120px;
+		top: 6rem;				
+	}
+	.bx-controls-direction .bx-prev:before,
+	.bx-controls-direction .bx-next:before {
+		font-size: 2rem;
+	}
+	.bx-controls-direction .bx-prev {
+		left: -40px;
+	}
+	.bx-controls-direction .bx-next {
+		right: -110px;	
+	}	
+}

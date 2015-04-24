@@ -1,29 +1,32 @@
-var path = require('path');
+var path = require('path'),
+	getOptions = function() {
+		return {
+			root: __dirname + '/build/pages',
+			dotfiles: 'deny',
+			headers: {
+				'x-timestamp': Date.now(),
+				'x-sent': true
+			}
+		};	
+	}, 
+	errorCallback = function (err) {
+		if (err) {
+	  		console.log(err);
+	  		responses_recvd.status(err.status).end();
+		}			
+	};
 
 // Export routes
 module.exports = function(app) {
 
     /** HOME **/
-	app.get('/', function(request, response) {		
-		response.render('index', {
-			touts: [{
-				title:"Wedding Packages",
-				link:"wedding",
-				image:"wedding1.jpg",
-				copy:"Our Wedding Planning Partners are best in industry experts. There is so much to remember for such a big day! Book an expert today, and relieve some of the stresses of arranging your big day."
-			}]
-		});
+	app.get('/', function(request, response) {							
+		response.sendFile('home.html', getOptions(), errorCallback);
 	});
 
 	/** RATES **/
 	app.get('/rates', function(request, response) {
-		response.sendFile('rates.html', { root: path.join(__dirname, './views') }, function(err) {
-			if(err) {
-				response.status(err.status).end();	
-			} else {
-				 console.log('Sent:', path.join(__dirname, './views'));
-			}			
-		});
+		response.sendFile('rates.html', getOptions(), errorCallback);
 	});
 
 	/** FlOORPLAN **/

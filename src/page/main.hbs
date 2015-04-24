@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	{{> head}}	
+	<body>
+		{{> admin}}
+		<section class="page">
+			<header>{{> nav}}</header>
+			<section class="body">{{{pages content }}}</section>
+		</section>		
+		{{> scripts}}
+		<script>
+			//S116.Ajax.getPageData('home').done(S116.Ajax.afterFetch);		
+		</script>
+	</body>		
+</html>

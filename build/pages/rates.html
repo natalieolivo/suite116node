@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Suite 116 : Event Space : Harlem, NYC</title>
+	
+		<meta name="keywords" content="new york event spaces, party space in new york, new york city event space, new york city event spaces, event space new york, event space new york city, event spaces new york,
+		event space nyc, event spaces new york city, event spaces nyc, nyc event space, event spaces in nyc, event space in new york, nyc event spaces, party space new york city, event space in nyc, new york party space, new york party spaces, event spaces ny, ny event space, new york event locations, party spaces new york city, party spaces new york, party spaces in new york, event space ny, private event space nyc, party venues new york city, event space rental nyc, new york city party space, event and party space new york, nyc event space rental, cheap event space nyc, wedding locations in new york, wedding locations new york, new york party locations, small event space nyc, new york city wedding locations, affordable event space nyc, new york wedding location, new york city wedding location, private party rooms nyc, party space rental nyc, the event space nyc, party rooms for rent, party spaces nyc, party space nyc, Harlem Event Space, Event Space Harlem, Party Space Harlem, Harlem Party Space, karaoke nyc private rooms"/>
+		<meta name="description" content="Suite116 is one of New York City's elegant and most affordable event and party spaces for rent. Our Venue includes birthday parties, Baby showers, Private parties, Wedding Showers, Wedding Receptions, charity and fundraiser events, and private karaoke events in nyc"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+		<link href="styles/reset.css" rel="stylesheet" />
+		<link href="styles/s116.css" rel="stylesheet" />
+		<link href="styles/rates.css" rel="stylesheet" />
+		<link href="styles/map.css" rel="stylesheet" />
+		<link href="styles/floorplan.css" rel="stylesheet" />
+		<link href="styles/email-us.css" rel="stylesheet" />
+		<link href="styles/slider.css" rel="stylesheet" />
+		<script src="js/third-party/jquery-1.9.1.js"></script>
+		<script src="js/third-party/jquery.bxslider.min.js"></script>
+		<script src="js/third-party/handlebars.js"></script>
+		<script src="js/suite116.js"></script>
+		<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+		<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAWBTwOKMwPq8KSNGuuD5RAxQPF04sUbgOaXMIX5x5YADzBOODHhTiVBsmhD1gSAWlVFFGXpepbDPrdQ" type="text/javascript"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+		  ga('create', 'UA-49430809-1', 'suite116.com');
+		  ga('send', 'pageview');
+	
+		</script>
+		<!--[if lt IE 9]>
+			<script src="js/thirdparty/html5shiv.js"></script>
+		<![endif]-->	
+	</head>	<body>
+		<div class="uploads-mask hide"></div>
+		<div class="uploads-panel hide">
+		  <div>
+		    <h2>Home Admin</h2>
+		    <span>X</span>
+		    <form id="image-upload" action="/admin/upload.php" enctype="multipart/form-data" method="post">
+		      <input class="image-input" type="file" name="file1" id="image-1">
+		      <input class="image-input" type="file" name="file2" id="image-2">
+		      <input class="image-input" type="file" name="file3" id="image-3">
+		      <input class="image-input" type="file" name="file4" id="image-4">
+		      <input class="upload-button" type="button" value="upload" />
+		      <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+		      <h3 id="status"></h3>                
+		    </form>
+		  </div>
+		</div>		<section class="page">
+			<header><nav>
+	<div class="burger"></div>
+	<ul class="navlist">		
+		<li><a href="/">Home</a></li>
+		<li><a href="/rates">Rates</a></li>
+		<li><a href="/floorplan">Floor Plan</a></li>
+		<li><a href="/emailus">Email Us</a></li>
+		<li><a href="/map">Map</a></li>
+		<li><a href="/faqs">FAQs</a></li>
+		<li class="admin-link hide"><a href="#">Admin</a></li>
+	</ul>	
+	<div class="logo"><a href='/'>Suite<span>116</span></a></div>
+	<div class="address">114 W 116th Street, NY, NY</div>
+	<figure>
+		<a href='/'>
+			<!-- <img src="imgs/logo.png" class="logo" /> -->
+		</a>
+	</figure>	
+</nav></header>
+			<section class="body"><section class="rates">
+	<section class="body">
+		<div id="services">
+			<h2>Suite 116 Price list :: {{specialRateText}}</h2>
+			<ul>    
+				{{#each rates}}
+					<li><em>{{{day}}}</em></li>
+					<li>{{../specialRateText}} &ndash; ${{specialRate}}</li>
+					<li>{{../hourRateText}} &ndash; ${{hourRate}}</li>
+				{{/each}}
+			</ul>
+			
+			<h2><em>Additional Info:</em></h2>		
+			<ul class="additional-info">
+				<li>Security Personnel: ${{securityRate}}</li>
+				{{#additionalInfo}}			
+					<li>{{info}}</li>
+				{{/additionalInfo}}		
+			</ul>
+		</div>
+	</section>
+</section>			
+		</section>
+		</section>		
+		<script type="text/javascript" src="js/utils/fetch.js"></script>
+		<section class="social-facebook-like">
+		    <footer>
+		    	<ul class="social">	
+		    		<li>Suite116 © 2015. All Rights Reserved.</li>			
+		    		<li class="social-twitter"></li>
+		    		<li class="social-facebook"></li>
+		    		<li class="social-googleplus"></li>		
+		    		<li class="social-pinterest"></li>
+		    		<li class="social-mail"><a href="mailto:suiteat116@gmail.com" class="icon-mail"></a></li>		
+		    	</ul>
+		    </footer>    <script type="text/javascript" src="js/utils/cookie.js"></script>
+		    <script type="text/javascript" src="js/utils/url.js"></script>
+		    <script>        
+		        (function(w, d){
+		            var urlEncoded = 'url='+encodeURIComponent(location.href).replace(/%20/g,'+'),
+		                viaEncoded = "via=suite116",
+		                textEncoded = "text=Suite 116 : Event Space : Harlem, NYC",
+		                values = [],
+		                $twitterLink = $(".social-twitter"),
+		                $fbLink = $(".social-facebook"),
+		                $pintLink = $(".social-pinterest"),
+		                twitterInfo;
+		            
+		            values.push(urlEncoded, viaEncoded, textEncoded);                         
+		            twitterInfo = values.join("&");
+		            
+		            fbInfo = location.href;            
+		            
+		            // Twitter
+		            $(".social-twitter").append('<a href="https://twitter.com/share?'+twitterInfo+'" class="icon-twitter"></a>');
+		            $("footer ul").append($twitterLink);
+		
+		            // Facebook
+		            $(".social-facebook").append('<a href="https://www.facebook.com/sharer/sharer.php?u='+urlEncoded+'" class="icon-facebook"></a>');
+		            $("footer ul").append($fbLink);
+		
+		            // Pinterest
+		            $(".social-pinterest").append('<a href="http://www.pinterest.com/pin/create/button/?url='+urlEncoded+'" class="icon-pinterest"></a>');    
+		            $("footer ul").append($pintLink);            
+		
+		        }(window, document));
+		    </script>
+		    <script>
+		        // check if cookie is set, if it isn't and it needs to be, set it
+		        if(!S116.Cookie('admin')) {
+		            S116.Admin.setAdminCookie(); 
+		        }        
+		        if(S116.Cookie('admin')) {            
+		            S116.Admin.setDisplay();            
+		            S116.Admin.setAdminEventHandlers(document.querySelector(".admin-link"));
+		        }      
+		    </script>
+		    <fb:like class="fb" ref="home" href="http://www.suite116.com" font="arial" colorscheme="light"></fb:like>
+		</section>
+		<script>
+			//S116.Ajax.getPageData('home').done(S116.Ajax.afterFetch);		
+		</script>
+	</body>		
+</html>

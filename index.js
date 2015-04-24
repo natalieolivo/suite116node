@@ -7,10 +7,8 @@ var express = require('express')
 	, fs = require('fs')
 	, _ = require('underscore');
 
-app.set('views', path.join(__dirname, './views'));
+app.set('views', path.join(__dirname, './build'));
 app.set('view engine', 'hbs');
-
-hbs.registerPartials(__dirname + '/views/partials');
 
 // Static CSS / IMAGE files
 app.use(express.static('assets'));
