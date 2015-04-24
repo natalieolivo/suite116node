@@ -1,0 +1,609 @@
+/* fonts */
+@font-face {
+	font-family: 'Always Forever';
+		src: url('../fonts/always_forever-webfont.eot'); /* IE9 Compat Modes */
+		src: url('../fonts/always_forever-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../fonts/always_forever-webfont.woff') format('woff'), /* Modern Browsers */
+			url('../fonts/always_forever-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/always_forever-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Justus Bold';
+		src: url('../fonts/justus-bold-webfont.eot'); /* IE9 Compat Modes */
+		src: url('../fonts/justus-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../fonts/justus-bold-webfont.woff') format('woff'), /* Modern Browsers */
+			url('../fonts/justus-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/justus-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'Justus Roman';
+		src: url('../fonts/justus-roman-webfont.eot'); /* IE9 Compat Modes */
+		src: url('../fonts/justus-roman-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../fonts/justus-roman-webfont.woff') format('woff'), /* Modern Browsers */
+			url('../fonts/justus-roman-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/justus-roman-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'icomoon';
+		src:url('../fonts/icomoon.eot');
+		src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/icomoon.woff') format('woff'),
+			url('../fonts/icomoon.ttf') format('truetype'),
+			url('../fonts/icomoon.svg#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-arrow-right {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;				
+}
+.icon-arrow-right:before {
+	content: "\e000";
+}
+.icon-twitter, 
+.icon-facebook, 
+.icon-pinterest,
+.icon-mail {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;		
+	color: rgba(255,255,255, 100);	
+	text-decoration: none;
+	font-size: 1.6em;
+	-webkit-transition: color .5s ease-out;
+  	-moz-transition: color .5s ease-out;
+  	-o-transition: color .5s ease-out;
+  	transition: color .5s ease-out;
+}
+.icon-twitter:hover {
+	color: rgba(0,172,238, .70);
+}
+.icon-facebook:hover {
+	color: rgba(0,172,238, .70);
+}
+.icon-pinterest:hover {
+	color: rgba(200,35,44, .70);
+}
+.icon-mail:hover {
+	color: rgba(216, 193, 124, .70);
+}
+.icon-twitter:before {
+	content: "\e600";
+}
+.icon-facebook:before {
+	content: "\e601";
+}
+.icon-pinterest:before {
+	content: "\e602";
+}
+.icon-mail:before {
+	content:"\e603";
+}
+
+
+a { color: rgb(204,0,0); }
+nav {
+	font-family: "Justus Roman";
+	width: 100%;
+	height: 70px;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	background: #000;
+	border-bottom: solid 1px #3D3C3C;	
+}
+nav ul { 
+	margin-left: 20px; 
+}
+nav li {
+	margin: 7px 2.4% 0 0;
+	color: #fff;
+}
+nav .logo {	
+	margin: 0 330px 0 24px;
+	color: red;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	letter-spacing: 6px;
+}
+nav .logo a {
+	text-decoration: none;
+	color: #fff; 
+}
+nav .logo span {
+	font-size: 30px;
+	color: rgb(216, 193, 124);
+	letter-spacing: -1px;
+}
+nav li a {
+	text-decoration: none;
+	color: #fff; 
+	padding: 5px;
+}
+nav li a:hover {
+	background: #383737;
+	padding: 4px;
+	border: solid 1px #383737;
+	border-radius: 7px;
+}
+.navlist { 
+	float: right; 
+	width: 74%;
+	margin-top: 20px;
+}
+.address {	
+	color: #fff;
+	padding: 0 10px 0 10px;
+	font-size: .7rem;
+}
+header {
+	position: relative;
+}
+.page img { display: block; }			
+		
+.page figure {
+	position: relative;
+	max-height: 181px;	
+}		
+.page figure figcaption.banner {
+	/*font-family: "Always Forever";*/
+	background: rgba(204,0,0, .70);				
+	font-size: 1.8em;				
+	width: 100%;				
+	color: #fff;
+	padding: 19px 0 19px 44px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.page section {
+	/*padding: 0 0 0 150px;*/
+}
+
+/** table display centering **/
+.is-table p { 
+	width: 50%;
+	margin: 0 auto;
+}
+section.page { 
+	width: 100%;	
+	background: #fff;	
+	position: relative;
+	font-size: .85rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+section.page .body {
+	width: 75%;
+	margin: 0 auto;
+}
+
+section.page .body.home {
+	width: 100%;
+	background: #000;
+	padding: 20px 0 0;
+	min-height: 200px;
+}
+
+section.page > ul {
+	margin: 0px 0 40px 190px;
+}
+section.page h2 {
+	font-family: "Justus Roman", "Arial";
+	margin: 40px 0 20px 0;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #ddd;
+}
+
+section.page ul.more em {
+	margin-right: 0;
+}
+section.page ul li em {
+	margin: 10px 10px 10px 0;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "Justus Roman", "Arial";
+	display: block;
+	font-size: 16px;
+}
+section.page .dance-styles { 
+	display: block;
+	margin-top: 4px;
+}
+
+section.page header figure {
+	width: 17%;
+}
+section.page img {
+	max-width: 100%;
+}
+.packages {
+	background: #fff;
+}
+.packages li {
+	width: 30.8%;
+	margin: 60px 1.26% 40px;
+	text-align: center;
+	display: block;
+	float: left;
+}
+.packages li a {
+	color: #000;
+	margin: 0 0 10px 0;
+	display: block;
+	text-decoration: none;
+}
+.packages li a:hover {
+	text-decoration: underline;
+	color: rgb(216, 193, 124);
+}
+.packages li figure {
+	overflow: hidden;
+}
+.packages p {
+	padding: 16px 0;
+	text-align: justify;
+}
+.packages li span {
+	font-family: 'Justus Roman', 'Georgia';
+	font-size: 1.4rem;
+	font-weight: 600; 	
+}
+
+footer {
+	background: #000;
+	height: 50px;
+	font-size: 14px;
+	font-family: "Justus Roman", "serif";
+	padding: 40px 20px 20px;
+	text-align: center;
+}
+footer li {
+	color: #fff;
+	margin-right: 24px;	
+}
+
+footer li a {
+	color: #ddd;
+}
+
+/* MIDWAY BREAKPOINTS */
+@media (max-width: 768px) {
+	.burger { 		
+		padding: 10px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+		z-index: 9999;
+		
+		 -moz-user-select: none;
+  		-webkit-user-select: none;
+  		-ms-user-select: none;		
+	}
+	.burger:after {
+		content: "\e609";
+		font-family: 'icomoon';
+		color: rgb(216, 193, 124);
+		font-size: 32px;		
+	}
+	.navlist + .burger {
+		background: #000;
+	}
+	.navlist {
+		opacity: 0;
+		visibility: hidden;
+		top: 35px;
+		width: 170px;
+		font-size: 11px;
+		margin-top: 10px;
+		background: #000;
+		padding: 10px;
+		position: fixed;		
+		right: 0;
+		z-index: 9999;
+		 -moz-user-select: none;
+  		-webkit-user-select: none;
+  		-ms-user-select: none;		
+
+  		-moz-user-transition: opacity 400ms ease-in;
+  		transition: opacity 400ms ease-in;
+		-webkit-transition: opacity 400ms ease-in;
+	}
+	.navlist.expand {
+		opacity: 1;
+		visibility: visible;
+		
+		-moz-user-transition: opacity 400ms ease-in;
+		transition:opacity 400ms ease-out;	
+		-webkit-transition: opacity 400ms ease-out;
+	}
+	nav li {
+		display: block;
+		margin: 20px 10px;
+	}
+	section.page .body {
+		width: 98%;
+	}
+	table, thead, tbody, th, td, tr { 
+		display: block !important; 
+	}
+	/*.subheader td,
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}*/	
+	table td { width: auto !important; }	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%;
+		text-align: right;
+	}
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align: left;
+	}
+
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Star Suite Treatment"; }
+	td:nth-of-type(2):before { content: "Stellar Suite Treatment"; }
+	td:nth-of-type(3):before { content: "Supernova Suite Treatment"; }
+	td:nth-of-type(4):before { content: "Star Suite Treatment"; }
+	td:nth-of-type(5):before { content: "Stellar Suite Treatment"; }
+	td:nth-of-type(6):before { content: "Supernova Suite Treatment"; }
+	td:nth-of-type(7):before { content: "Star Suite Treatment"; }
+	td:nth-of-type(8):before { content: "Stellar Suite Treatment"; }
+	td:nth-of-type(9):before { content: "Supernova Suite Treatment"; }
+
+	.page figure figcaption.banner {
+		padding-left: 13%;
+	}
+	.page header figure { width: 10%; }
+	section.page header figure img,
+	section.page figure.first img {
+		display: block;
+	}
+	.packages li { 
+		display: block; 
+		width: 100%;
+		margin: 20px 0;
+	}
+	section.page .body {
+		padding: 0;
+	}				
+}
+
+/** SMALL RES BREAKPOINTS **/
+@media (max-width: 532px) {	
+	nav ul { cursor: pointer; }		
+	.packages p {
+		padding: 16px;
+	}
+	footer li:first-child {
+		display: block;
+		margin-bottom: 10px;
+	}
+	footer li {
+		margin-right: 4px;		
+	}
+	footer li a {
+		color: rgb(216, 193, 124);
+	}
+	.page .suite-map {
+		padding: 1em;
+	}
+	.page #floor-plan {
+		padding: 80px 0;
+		margin-left: 1em;
+	}
+	td {
+		font-size: 12px;
+	}
+	.number a {		
+		color: rgb(216, 193, 124);
+	}
+	.number { 
+		font-size: 14px !important; 
+		top: 40% !important;
+	}	
+}
+
+.social-twitter {	
+	padding: 6px !important;	
+}
+.social-facebook-like {	
+	width: 100%;
+	clear: both;
+}
+
+/* Form */
+input[type=submit] {
+	border: solid 1px #ddd;
+	background: rgb(204,0,0);
+	padding: 10px;
+	color: #fff;
+	font-size: 1em;
+}
+
+/** Form Errors **/
+input.error { 
+	-moz-box-shadow: 3px 3px 4px rgb(204,0,0);
+	-webkit-box-shadow: 3px 3px 4px rgb(204,0,0);
+	box-shadow: 3px 3px 4px rgb(204,0,0);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='rgb(204,0,0)')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='rgb(204,0,0)');
+	border: solid 1px rgb(204,0,0); 
+}
+.js-error-box {
+	display: none; 
+	background: #fff; 
+	border: solid 1px rgb(204,0,0);
+	color: rgb(204,0,0); 
+	width: 50%; 
+	padding: 10px; 
+	margin: 10px 0;
+}
+#error { 
+	padding: 20px 0 0 20px; 
+	height: 420px; 
+	font-size: 1.4em; 
+	color: rgb(204,0,0); 
+}
+.number {
+	position: absolute;
+	top: 90%;
+	right: 15%;
+	z-index: 999;
+	color: rgb(216, 193, 124);
+	font-size: 30px;
+	font-family: Justus Roman;
+}
+/**
+	WEDDING PACKAGES
+**/
+.wedding-package-list li { margin-bottom: 40px; }
+.wedding-package-list li div { margin-top: 10px; }
+
+/**
+	TABLE LAYOUT
+**/
+table {
+	width: 100%;	
+	display: table;
+	border-collapse: collapse;	
+	text-align: center;
+}
+table thead th { 
+	font-family: Justus Roman; 
+	font-size: 16px;
+	padding: 10px 0;
+}
+table tr:first-of-type td {
+	font-weight: bold; 
+	font-family: 'icomoon';
+}
+table tr:first-of-type td:before { padding-right: 10px; }
+table tr:first-of-type td:nth-child(1):before,
+table tr:first-of-type td:nth-child(4):before { content: '\e604'; }
+table tr:first-of-type td:nth-child(2):before,
+table tr:first-of-type td:nth-child(5):before { content: '\e604\e604'; }
+table tr:first-of-type td:nth-child(3):before,
+table tr:first-of-type td:nth-child(6):before { content: '\e604\e604\e604'; }
+
+table tr { width: 100%; }
+table td {	
+	width: 50%;
+	padding: 8px;	
+}
+#babyShower-table {
+	background: rgb(216, 193, 124);
+}
+#babyShower-table .item11, 
+#babyShower-table .item12,
+#babyShower-table .item13 {
+	display: none !important;
+}
+#kidBirthday-table {
+	background: rgb(243, 243, 243);
+}
+
+.rental,
+.price {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#faq {
+	padding: 0 20px 40px;
+}
+#faq h3 { margin: 18px 0; }
+#faq li { display: block; margin-bottom: 10px; }
+
+.uploads-mask {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	background: #fff;
+}
+
+.uploads-mask,
+.uploads-panel {
+	position: absolute;
+	z-index: 1000;
+}
+
+.uploads-panel {		
+	width: 50%;
+	background: #fff;
+	padding: 20px;	
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+
+    -moz-transform: translateX(-50%) translateY(-50%);
+  	-o-transform: translateX(-50%) translateY(-50%);
+  	-ms-transform: translateX(-50%) translateY(-50%);  
+  	-webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hide { display: none; }
+
+.transition-show.uploads-mask { 	
+	-webkit-transition: opacity 300ms 3s;
+	transition: opacity 300ms 3s;
+	opacity: .75;
+}
+.transition-show.uploads-panel {
+	opacity: 1;
+	-webkit-transition: opacity 600ms 600ms;
+	transition: opacity 600ms 600ms;
+}

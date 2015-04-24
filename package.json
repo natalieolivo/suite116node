@@ -1,0 +1,39 @@
+{
+  "name": "suite116",
+  "version": "1.0.0",
+  "description": "Event Space Application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natalieolivo/suite116node.git"
+  },
+  "author": "nolivo1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natalieolivo/suite116node/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-compile-handlebars": "^0.4.4",
+    "gulp-data": "^1.2.0",
+    "gulp-karma": "0.0.4",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.1",
+    "handlebars": "^3.0.2",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha": "^0.1.10",
+    "mocha": "^2.2.1",
+    "supertest": "^0.15.0"
+  },
+  "dependencies": {
+    "hbs": "^3.0.1",
+    "mongodb": "^2.0.25",
+    "underscore": "^1.8.2"
+  }
+}

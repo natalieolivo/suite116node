@@ -1,0 +1,27 @@
+#services {
+  padding: 0 20px; }
+
+#services h2 {
+  font-family: 'Justus Roman', 'Arial';
+  margin-bottom: 14px; }
+
+#services em {
+  font-size: 20px;
+  font-family: 'Justus Roman';
+  font-style: normal; }
+
+#services ul {
+  padding: 10px 20px; }
+
+#services li {
+  display: list-item;
+  line-height: 2em; }
+
+#services li:nth-child(11) {
+  display: none; }
+
+#services .additional-info {
+  list-style-type: disc; }
+
+#services .additional-info li {
+  margin-left: 15px; }

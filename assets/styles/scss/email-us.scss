@@ -1,0 +1,46 @@
+#email-us {
+	padding: 60px 0 30px 0;
+	margin: 0 auto;
+	width: 60%;
+}
+
+#email-us span { 
+	font-size: .75em; 	
+}
+#email-us .direct { margin-top: 1em; }
+
+#email-us * {
+	font-family: Justus Roman, Serif;
+}
+
+#email-us input[type=submit] {
+	margin: 1em 0;
+}
+
+input.text {
+	font-size: 1em;
+	height: 2em;
+	min-width: 70%;
+	margin-bottom: 1em;
+}
+textarea {
+	width: 70%;
+	min-height: 12em;
+}
+
+#email-success,
+#email-error {
+	font-family: Justus Roman;
+	line-height: 1.4em;
+	padding: 60px 0;
+}
+
+#email-error .shadow-block,
+#email-success .shadow-block {
+	width: 70%;
+	margin: 20px;
+	padding: 20px;
+	background: #fff;
+	-webkit-box-shadow: 0px 3px 6px 0px #242324;
+		box-shadow: 0px 3px 6px 0px #242324;
+}
